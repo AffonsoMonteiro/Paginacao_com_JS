@@ -73,7 +73,7 @@ header {
     height: 40px;
 }
 
-#paginate .pagination div:hover,
+#paginate .pagination div.numbers div:hover,
 #paginate .pagination div.numbers div.active {
     color: var(--primary);
 }
