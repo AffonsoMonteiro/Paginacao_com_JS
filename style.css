@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --black: #130f0d;
+    --primary: #fd9621;
+    --white: #f0f0f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+button,
+input {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    background-color: #190e00;
+
+    padding: 16px;
+}
+
+#paginate {
+    width: 100%;
+
+    margin: 32px auto;
+}
+
+#paginate .list .item {
+    border-bottom: 1px solid #3d2101;
+    padding: 16px 32px;
+
+}
+
+#paginate .item:hover {
+    background-color: #ffffff0a;
+}
+
+#paginate .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    
+}
+
+#paginate .pagination div {
+    cursor: pointer;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    font-size: 14px;
+}
+
+#paginate .pagination div:not(.numbers),
+#paginate .pagination div.numbers div {
+    width: 40px;
+    height: 40px;
+}
+
+#paginate .pagination div:hover,
+#paginate .pagination div.numbers div.active {
+    color: var(--primary);
+}
